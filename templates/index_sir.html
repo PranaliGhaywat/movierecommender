@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{url_for("static", filename ="css/style.css")}}">
+</head>
+<body>
+    <h1>Movie Recommendation System</h1>
+
+    <!-- Display error messages if any -->
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <!-- Form to get user input -->
+    <form action="/predict" method="post">
+        <label for="movie">Select a Movie:</label>
+        <select name="M_title" id="movie">
+            {% for movie in movies %}
+                <option value="{{ movie }}">{{ movie }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Recommend</button>
+    </form>
+
+    <!-- Display recommended movies -->
+        <h2>Recommended Movies:</h2>
+        <div id="box">
+    {% for im, name in posters|zip(rec_movies) %}
+    <div id= "columns">
+        <div id="poterss">
+            {% if im %}
+                <img src="{{ im }}" alt="{{ name }} Poster" style="width: 100%; height: auto;">
+            {% else %}
+                <img src="{{ url_for('static', filename='images/default_poster.jpg') }}" alt="Default Poster" style="width: 200px; height: auto;">
+            {% endif %}
+        </div>
+        <div id="namem">{{ name }}</div>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/static/images/dope-avengers-wallpaper-lpxfs0vr872ofi0t.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: rgb(242, 244, 248);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    background-color: cadetblue;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    
+}
+
+label{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: black;
+    
+}
+
+select{
+    background-color: rgb(230, 229, 185);
+    color: rgb(14, 17, 21);
+    border: 1px solid #bb86fc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    display: flex;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+button{
+    color: gray;
+    background-color: antiquewhite;
+    height: 25px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(29, 28, 28);
+}
+
+ul{
+    list-style-type: disc;
+    padding: 0;
+    margin: 1rem 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+li{
+    background-color: antiquewhite;
+    color: rgb(241, 243, 245);
+    font-family: 'Calibri', sans-serif;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center; 
+}
+
+#box{
+    display: flex;
+    width: fit-content;
+    background-position: center;
+    color: bisque;
+    padding-left: 3px;
+    padding-right: 3px;
+
+    
+}
+
+#box #columns{
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    text-align: center;
+    padding: 10px 20px;
+    
+
+
+}
+
+#box #columns #namen{
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+#box #columns #poterss{
+
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    
+    
+}
+
